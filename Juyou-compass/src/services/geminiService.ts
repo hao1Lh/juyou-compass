@@ -92,7 +92,7 @@ const reportSchema = {
         cheat_code: {
           type: Type.OBJECT,
           properties: {
-            title: { type: Type.STRING, description: "黑客思维/内行洞察的标题" },
+            title: { type: Type.STRING, description: "在地思维/内行洞察的标题" },
             content: { type: Type.STRING, description: "一条关于该城市非显而易见的、反直觉的高价值建议。" }
           },
           required: ["title", "content"]
@@ -116,7 +116,7 @@ export const generateReport = async (inputs: UserInputs): Promise<ReportData> =>
   const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
   
   const prompt = `
-    请扮演一位精通中国传统命理（八字五行）、现代环境心理学和数字游民生活方式的高级咨询师。
+    请扮演一位精通中国传统命理（八字五行和紫微斗数）、现代环境心理学和数字游民生活方式的高级咨询师。
     
     用户信息：
     - 目标城市：${inputs.targetCity}
@@ -135,7 +135,7 @@ export const generateReport = async (inputs: UserInputs): Promise<ReportData> =>
     2. **Paid Content**:
        - **Pitfalls**: 结合命理弱点与城市特质的深度风险对冲。
        - **Roadmap**: 具体的三个阶段时间线规划。
-       - **Cheat Code**: 一条反直觉的、内行视角的城市黑客建议。
+       - **Cheat Code**: 一条反直觉的、内行视角的城市生活建议。
 
     语气：理性、深刻、一针见血，如同给特工下达的任务简报。
   `;
