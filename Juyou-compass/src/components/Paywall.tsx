@@ -74,7 +74,7 @@ const Paywall: React.FC<Props> = ({ onUnlock }) => {
           <div className="flex items-start gap-3">
             <ShieldCheck size={16} className="text-orange-600 mt-0.5 flex-shrink-0" />
             <span className="text-xs text-stone-600 leading-tight">
-              <span className="font-bold text-stone-900 block mb-0.5">深度风控</span>
+              <span className="font-bold text-stone-900 block mb-0.5">深度分析</span>
               基于命理的城市陷阱预警
             </span>
           </div>
