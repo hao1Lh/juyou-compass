@@ -67,7 +67,7 @@ export default function App() {
       setState(prev => ({ ...prev, step: 'report', result }));
     } catch (e) {
       console.error(e);
-      setErrorMsg("能量连接中断，请检查 API Key 或网络设置。");
+      setErrorMsg("能量连接中断，请检查网络设置。");
       setState(prev => ({ ...prev, step: 'input' }));
     } finally {
       setIsLoading(false);
