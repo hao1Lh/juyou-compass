@@ -190,7 +190,7 @@ const ReportView: React.FC<Props> = ({ result, inputs, onReset }) => {
                 <div className="flex items-start gap-3 relative z-10">
                     <Zap size={24} className="text-orange-500 mt-1 flex-shrink-0" />
                     <div>
-                        <div className="text-xs font-mono text-orange-500 uppercase tracking-widest mb-1">Local Hack / 本地黑客思维</div>
+                        <div className="text-xs font-mono text-orange-500 uppercase tracking-widest mb-1">Local Hack / 在地文化思维</div>
                         <h4 className="text-lg font-bold mb-3">{result.paid_content.cheat_code.title}</h4>
                         <p className="text-sm text-stone-300 leading-relaxed font-light opacity-90">
                             {result.paid_content.cheat_code.content}
@@ -221,7 +221,7 @@ const ReportView: React.FC<Props> = ({ result, inputs, onReset }) => {
          {/* Social Proof */}
          <div className="flex items-center justify-center gap-2 text-stone-500 text-xs font-mono mb-4 animate-pulse">
             <Users size={12} />
-            <span>已有 12,450 位游民解锁了时空档案</span>
+            <span>已有 6,450 位游民解锁了时空档案</span>
          </div>
          
          <button onClick={onReset} className="font-bold text-xs text-stone-900 hover:text-orange-600 flex items-center justify-center gap-2 mx-auto uppercase tracking-widest transition-colors border border-stone-900 px-6 py-3 rounded-sm hover:bg-stone-900 hover:text-white">
