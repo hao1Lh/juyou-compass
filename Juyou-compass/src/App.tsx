@@ -236,7 +236,7 @@ export default function App() {
                 >
                     {isLoading ? 'CALCULATING...' : (
                         <>
-                        开始排盘测算 <Sparkles size={16} className="group-hover:rotate-12 transition-transform" />
+                        开始数据模拟测算 <Sparkles size={16} className="group-hover:rotate-12 transition-transform" />
                         </>
                     )}
                 </button>
