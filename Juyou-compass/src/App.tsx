@@ -8,7 +8,7 @@ import { ReportData, AppState } from './types';
 const LOADING_MSGS = [
   "正在连接时空能量场...",
   "读取当地经纬度磁场...",
-  "解析您的先天五行命盘...",
+  "解析先天五行命盘...",
   "推演天干地支交互...",
   "正在生成避坑指南...",
   "能量聚合中...",
@@ -236,7 +236,7 @@ export default function App() {
                 >
                     {isLoading ? 'CALCULATING...' : (
                         <>
-                        开始数据模拟测算 <Sparkles size={16} className="group-hover:rotate-12 transition-transform" />
+                        开启城市能量测算 <Sparkles size={16} className="group-hover:rotate-12 transition-transform" />
                         </>
                     )}
                 </button>
