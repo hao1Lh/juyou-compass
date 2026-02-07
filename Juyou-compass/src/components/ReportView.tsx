@@ -134,7 +134,7 @@ const ReportView: React.FC<Props> = ({ result, inputs, onReset }) => {
       <section className="relative">
         <div className="flex items-center gap-3 mb-8">
             <div className="h-px bg-stone-300 flex-1"></div>
-            <h3 className="text-lg font-bold text-stone-900 italic font-serif">03. 天机档案</h3>
+            <h3 className="text-lg font-bold text-stone-900 italic font-serif">03. 环境能量场分析报告</h3>
             <div className="h-px bg-stone-300 flex-1"></div>
         </div>
 
@@ -221,7 +221,7 @@ const ReportView: React.FC<Props> = ({ result, inputs, onReset }) => {
          {/* Social Proof */}
          <div className="flex items-center justify-center gap-2 text-stone-500 text-xs font-mono mb-4 animate-pulse">
             <Users size={12} />
-            <span>已有 6,450 位游民解锁了时空档案</span>
+            <span>已有 6,450 位游民解锁了分析报告</span>
          </div>
          
          <button onClick={onReset} className="font-bold text-xs text-stone-900 hover:text-orange-600 flex items-center justify-center gap-2 mx-auto uppercase tracking-widest transition-colors border border-stone-900 px-6 py-3 rounded-sm hover:bg-stone-900 hover:text-white">
