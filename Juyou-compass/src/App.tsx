@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Sparkles, Compass, MapPin, Target, User, Brain } from 'lucide-react';
+// 已修复：移除了未使用的 User 图标，防止 Cloudflare 报错
+import { Sparkles, Compass, MapPin, Target, Brain } from 'lucide-react';
 import ReportView from './components/ReportView';
 import { generateReport } from './services/geminiService';
 import { ReportData, AppState } from './types';
@@ -144,7 +145,7 @@ export default function App() {
                 <div className="space-y-4">
                     <h3 className="text-xs font-bold font-mono text-stone-400 uppercase tracking-widest border-b border-stone-100 pb-2 mb-4">01 Trip Intent</h3>
                     <div className="grid grid-cols-1 gap-4">
-                         <div className="col-span-1">
+                          <div className="col-span-1">
                             <label className="block text-xs font-serif text-stone-600 mb-1">目的地</label>
                             <div className="relative">
                                 <MapPin size={14} className="absolute left-3 top-3 text-stone-400" />
@@ -182,7 +183,7 @@ export default function App() {
                     <h3 className="text-xs font-bold font-mono text-stone-400 uppercase tracking-widest border-b border-stone-100 pb-2 mb-4 mt-6">02 Personal Energy</h3>
                     
                     <div className="grid grid-cols-2 gap-4">
-                         <div className="col-span-1">
+                          <div className="col-span-1">
                             <label className="block text-xs font-serif text-stone-600 mb-1">出生日期</label>
                             <input
                                 type="date"
@@ -191,7 +192,7 @@ export default function App() {
                                 onChange={e => handleInputChange('birthDate', e.target.value)}
                             />
                         </div>
-                         <div className="col-span-1">
+                          <div className="col-span-1">
                             <label className="block text-xs font-serif text-stone-600 mb-1">具体时间 <span className="text-stone-300">(选填)</span></label>
                             <input
                                 type="time"
@@ -203,7 +204,7 @@ export default function App() {
                     </div>
 
                     <div className="grid grid-cols-2 gap-4">
-                         <div className="col-span-1">
+                          <div className="col-span-1">
                             <label className="block text-xs font-serif text-stone-600 mb-1">出生地点</label>
                             <input
                                 type="text"
@@ -213,7 +214,7 @@ export default function App() {
                                 onChange={e => handleInputChange('birthPlace', e.target.value)}
                             />
                         </div>
-                         <div className="col-span-1">
+                          <div className="col-span-1">
                             <label className="block text-xs font-serif text-stone-600 mb-1">MBTI <span className="text-stone-300">(选填)</span></label>
                             <div className="relative">
                                 <Brain size={14} className="absolute left-2 top-3 text-stone-400" />
@@ -243,22 +244,26 @@ export default function App() {
             </div>
         </div>
 
-        <div className="mt-8 flex flex-col items-center gap-1 text-stone-400">
-            <div className="flex items-center gap-2 font-bold text-stone-900 text-xs tracking-[0.2em] font-mono">
-                JUYOU LAB © 2025
+        {/* Footer & Disclaimer */}
+        <div className="mt-12 flex flex-col items-center text-stone-400 pb-10">
+            <div className="flex flex-col items-center gap-1 mb-6">
+                <div className="flex items-center gap-2 font-bold text-stone-900 text-xs tracking-[0.2em] font-mono">
+                    JUYOU LAB © 2025
+                </div>
+                <div className="text-[10px] tracking-widest uppercase font-mono text-stone-400">
+                     MAKE YOUR LIFE L!VE
+                </div>
             </div>
-            <div className="text-[10px] tracking-widest uppercase font-mono text-stone-400">
-                 MAKE YOUR LIFE L!VE
+
+            <div className="w-full max-w-[90%] text-center space-y-1 border-t border-stone-200 pt-4">
+              <p className="text-[10px] text-stone-500/80 leading-relaxed font-sans">
+                  本工具基于环境心理学与地理数据算法，旨在帮助用户寻找身心舒适的旅居目的地。
+              </p>
+              <p className="text-[9px] text-stone-400/60 leading-relaxed transform scale-90">
+                * 结果仅供生活娱乐与旅行决策参考，不构成绝对建议
+              </p>
             </div>
         </div>
-
-        <div className="mt-4 max-w-[90%] text-center space-y-1 border-t border-stone-200 pt-3">
-          <p className="text-[10px] text-stone-500/80 leading-relaxed font-sans">
-             本工具基于环境心理学与地理数据算法，旨在帮助用户寻找身心舒适的旅居目的地。
-          </p>
-          <p className="text-[9px] text-stone-400/60 leading-relaxed transform scale-90">
-            * 结果仅供生活娱乐与旅行决策参考，不构成绝对建议
-          </p>
       </div>
     </div>
   );
