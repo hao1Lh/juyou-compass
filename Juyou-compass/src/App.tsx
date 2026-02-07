@@ -124,7 +124,7 @@ export default function App() {
                 <Compass size={32} className="text-stone-900" />
             </div>
             <h1 className="text-3xl font-serif font-bold text-stone-900 mb-1">Juyou Lab</h1>
-            <p className="text-xs font-mono tracking-[0.2em] text-stone-500 uppercase">Energy Compass Interface</p>
+            <p className="text-xs font-mono tracking-[0.2em] text-stone-500 uppercase">城市能量罗盘</p>
         </div>
 
         {/* Form Card */}
@@ -251,6 +251,15 @@ export default function App() {
                  MAKE YOUR LIFE L!VE
             </div>
         </div>
+
+        {/* 新增：免责声明 (使用极小字体 + 低透明度，降低视觉干扰) */}
+        <div className="mt-4 max-w-[90%] text-center space-y-1 border-t border-stone-200 pt-3">
+          <p className="text-[10px] text-stone-500/80 leading-relaxed font-sans">
+             本工具基于环境心理学与地理数据算法，旨在帮助用户寻找身心舒适的旅居目的地。
+          </p>
+          <p className="text-[9px] text-stone-400/60 leading-relaxed transform scale-90">
+            * 结果仅供生活娱乐与旅行决策参考，不构成绝对建议
+          </p>
       </div>
     </div>
   );
