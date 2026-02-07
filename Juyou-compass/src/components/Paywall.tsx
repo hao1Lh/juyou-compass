@@ -62,11 +62,11 @@ const Paywall: React.FC<Props> = ({ onUnlock }) => {
         </div>
 
         <h3 className="text-xl font-bold text-stone-900 mb-2 font-serif">
-          解锁完整天机档案
+          解锁完整城市能量分析报告
         </h3>
         <p className="text-stone-500 text-xs mb-8 leading-relaxed px-2">
           您正在访问深度定制的策略内容。<br/>
-          支付 ¥9.9 即可获取针对您命盘的专属避坑指南与行动蓝图。
+          支付 ¥9.9 即可获取针对您性格特质的专属避坑指南与行动蓝图。
         </p>
 
         {/* 价值点展示 */}
@@ -75,7 +75,7 @@ const Paywall: React.FC<Props> = ({ onUnlock }) => {
             <ShieldCheck size={16} className="text-orange-600 mt-0.5 flex-shrink-0" />
             <span className="text-xs text-stone-600 leading-tight">
               <span className="font-bold text-stone-900 block mb-0.5">深度分析</span>
-              基于命理的城市陷阱预警
+              基于数据科学的城市陷阱预警
             </span>
           </div>
           <div className="flex items-start gap-3">
