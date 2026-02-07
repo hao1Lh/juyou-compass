@@ -9,7 +9,7 @@ interface Props {
 const verifyCode = (input: string): boolean => {
   const cleanInput = input.trim().toUpperCase();
   // 1. 固定口令 (用于内部测试或活动)
-  const validCodes = ["JUYOU2025", "VIP888", "OPENLAB"];
+  const validCodes = ["JUYOU2026", "OPENLAB"];
   
   // 2. 前缀校验规则 (用于自动发卡)
   // 你可以在发卡平台设置生成的卡密都以 "JUYOU-" 开头，例如 "JUYOU-A7B2"
