@@ -134,7 +134,7 @@ const ReportView: React.FC<Props> = ({ result, inputs, onReset }) => {
       <section className="relative">
         <div className="flex items-center gap-3 mb-8">
             <div className="h-px bg-stone-300 flex-1"></div>
-            <h3 className="text-lg font-bold text-stone-900 italic font-serif">03. 环境能量场分析报告</h3>
+            <h3 className="text-lg font-bold text-stone-900 italic font-serif">03. 城市能量场分析报告</h3>
             <div className="h-px bg-stone-300 flex-1"></div>
         </div>
 
