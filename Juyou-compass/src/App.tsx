@@ -252,7 +252,6 @@ export default function App() {
             </div>
         </div>
 
-        {/* 新增：免责声明 (使用极小字体 + 低透明度，降低视觉干扰) */}
         <div className="mt-4 max-w-[90%] text-center space-y-1 border-t border-stone-200 pt-3">
           <p className="text-[10px] text-stone-500/80 leading-relaxed font-sans">
              本工具基于环境心理学与地理数据算法，旨在帮助用户寻找身心舒适的旅居目的地。
