@@ -44,7 +44,7 @@ const Paywall: React.FC<Props> = ({ onUnlock }) => {
     // [重要配置] 请将下方链接替换为你自己的商品链接
     // 推荐平台：面包多 (mianbaoduo.com) 或 数码荔枝
     // -----------------------------------------------------------------------
-    const PURCHASE_URL = "https://mianbaoduo.com/o/your-product-link"; 
+    const PURCHASE_URL = "https://xhslink.com/m/6y17YXri9gR"; 
     
     window.open(PURCHASE_URL, "_blank");
   };
